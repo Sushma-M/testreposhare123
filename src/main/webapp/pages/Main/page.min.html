@@ -58,7 +58,7 @@ var _MainPage_Variables_ ={}
                     <wm-grid-column binding="deptcode" caption="Deptcode" type="string" readonly="false" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
                     <wm-grid-column binding="location" caption="Location" type="string" readonly="false" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
                     <wm-grid-column binding="tenantid" caption="Tenantid" type="integer" readonly="false" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
-                    <wm-grid-action key="addNewRow" label="New" value="new" icon="new" show="true" class="btn-primary" action="addNewRow()"></wm-grid-action>
+                    <wm-grid-action key="addNewRow" label="New" show="true" class="btn-primary" icon="new" action="addNewRow()" type="button"></wm-grid-action>
                 </wm-grid>
                 <wm-liveform novalidate="false" title="Details" name="DepartmentLiveform1" dataset="bind:Variables.HrdbDepartmentData.dataSet" formtype="inline">
                     <wm-layoutgrid name="layoutgrid1">
@@ -117,6 +117,9 @@ var _MainPage_Variables_ ={}
                     <wm-form-action key="save" class="form-save btn-success" iconclass="glyphicon glyphicon-save" display-name="Save" show="true" type="Submit" update-mode="true"></wm-form-action>
                 </wm-liveform>
             </wm-livegrid>
-            <wm-chart theme="Terrestrial" name="chart1" type="Column"></wm-chart>
+            <wm-chart dataset="bind:Variables.HrdbDepartmentData.dataSet" yaxisdatakey="q1,q2,q3,q4" xaxisdatakey="location" theme="Terrestrial" name="chart1" type="Column"></wm-chart>
+            <wm-prefab height="194" name="FacebookOAuth1" prefabname="FacebookOAuth"></wm-prefab>
+        </wm-page-content>
     </wm-content>
+</wm-page>
 </script>

@@ -1387,5 +1387,13 @@
 		"dataBinding": {},
 		"category": "wm.NavigationVariable",
 		"_id": "wm-goToPage_Page-wm.NavigationVariable-1441890223081"
+	},
+	"goToPage_testpage": {
+		"owner": "App",
+		"operation": "gotoPage",
+		"pageName": "testpage",
+		"dataBinding": {},
+		"category": "wm.NavigationVariable",
+		"_id": "wm-goToPage_testpage-wm.NavigationVariable-1441890939719"
 	}
 }
